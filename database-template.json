@@ -1,0 +1,129 @@
+{
+  "schools": {
+    "school1": {
+      "schoolInfo": {
+        "name": "مدرسة ديرب نجم الثانوية",
+        "stage": "المرحلة الثانوية",
+        "principal": {
+          "name": "محمد أحمد",
+          "whatsapp": "01000000000"
+        },
+        "address": "ديرب نجم - الشرقية",
+        "code": "12345",
+        "email": "school@example.com",
+        "phone": "0123456789"
+      },
+      "staff": {
+        "SUP001": {
+          "name": "محمد علي",
+          "jobTitle": "مشرف",
+          "nationalId": "12345678901234",
+          "codeNumber": "SUP001",
+          "whatsapp": "01111111111",
+          "email": "supervisor1@school.com",
+          "role": "supervisor"
+        }
+      },
+      "classes": {
+        "class1": {
+          "name": "الصف الأول",
+          "roomNumber": "101",
+          "students": {
+            "student1": {
+              "name": "عبدالله محمد",
+              "studentId": "S001",
+              "dateOfBirth": "2015-01-01",
+              "parentPhone": "01234567890",
+              "attendance": {
+                "2025-09-01": "حاضر",
+                "2025-09-02": "غائب"
+              },
+              "grades": {
+                "رياضيات": {
+                  "الفصل الأول": 95,
+                  "الفصل الثاني": 88
+                },
+                "علوم": {
+                  "الفصل الأول": 92,
+                  "الفصل الثاني": 90
+                }
+              }
+            }
+          }
+        }
+      },
+      "schedule": {
+        "term1": {
+          "startDate": "2025-09-01",
+          "endDate": "2025-12-31",
+          "periods": {
+            "period1": {
+              "startTime": "7:30",
+              "endTime": "8:30"
+            },
+            "period2": {
+              "startTime": "8:45",
+              "endTime": "9:45"
+            }
+          }
+        }
+      }
+    }
+  },
+  "users": {
+    "admin": {
+      "name": "مدير النظام",
+      "email": "admin@school.com",
+      "role": "admin",
+      "schoolName": "مدرسة ديرب نجم الثانوية",
+      "createdAt": "2025-09-01T00:00:00Z",
+      "lastLogin": "2025-09-03T10:00:00Z"
+    },
+    "supervisor1": {
+      "name": "محمد علي",
+      "email": "supervisor1@school.com",
+      "schoolName": "مدرسة ديرب نجم الثانوية",
+      "role": "supervisor",
+      "whatsapp": "01111111111",
+      "nationalId": "12345678901234",
+      "codeNumber": "SUP001",
+      "createdAt": "2025-09-01T00:00:00Z",
+      "lastLogin": "2025-09-03T09:00:00Z"
+    }
+  },
+  "system": {
+    "settings": {
+      "region": "محافظة الشرقيه",
+      "directorate": "مدرية التربيه والتعليم",
+      "administration": "ادارة ديرب نجم التعلمية",
+      "department": "ادارة التخطيط الاستراتيجي والسياسات",
+      "academicYear": "2025-2026",
+      "terms": ["الفصل الأول", "الفصل الثاني"],
+      "schoolStages": ["ابتدائي", "متوسط", "ثانوي"],
+      "subjects": [
+        "القرآن الكريم",
+        "اللغة العربية",
+        "الرياضيات",
+        "العلوم",
+        "اللغة الإنجليزية",
+        "الاجتماعيات"
+      ],
+      "gradingScale": {
+        "ممتاز": 95,
+        "جيد جداً": 85,
+        "جيد": 75,
+        "مقبول": 65,
+        "ضعيف": 0
+      }
+    },
+    "notifications": {
+      "notification1": {
+        "title": "بداية العام الدراسي",
+        "message": "نرحب بكم في العام الدراسي الجديد",
+        "timestamp": "2025-09-01T07:00:00Z",
+        "type": "إعلان",
+        "recipients": ["الكل"]
+      }
+    }
+  }
+}

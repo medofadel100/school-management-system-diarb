@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "schools": {
+      ".read": "auth.uid != null",
+      ".write": "auth.uid != null && root.child('users').child(auth.uid).child('role').val() === 'admin'",
+      "$schoolId": {
+        ".read": "auth.uid != null",
+        ".write": "auth.uid != null && (root.child('users').child(auth.uid).child('role').val() === 'admin' || root.child('users').child(auth.uid).child('schoolName').val() === $schoolId)"
+      }
+    },
+    "users": {
+      ".read": "auth.uid != null && root.child('users').child(auth.uid).child('role').val() === 'admin'",
+      "$uid": {
+        ".read": "auth.uid === $uid || root.child('users').child(auth.uid).child('role').val() === 'admin'",
+        ".write": "auth.uid === $uid || root.child('users').child(auth.uid).child('role').val() === 'admin'"
+      }
+    },
+    "auth": {
+      ".read": false,
+      ".write": false
+    },
+    "system": {
+      "settings": {
+        ".read": "auth.uid != null",
+        ".write": "auth.uid != null && root.child('users').child(auth.uid).child('role').val() === 'admin'"
+      }
+    }
+  }
+}
